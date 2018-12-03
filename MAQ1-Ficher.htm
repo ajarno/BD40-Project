@@ -56,74 +56,39 @@ function Bouton1_Click()
      DataSource      =   ""
   -->
 </SPAN>
-<SPAN STYLE="HEIGHT: 24px; LEFT: 130px; POSITION: absolute; TOP: 80px; WIDTH: 100px">
+<SPAN STYLE="HEIGHT: 400px; LEFT: 40px; POSITION: absolute; TOP: 110px; WIDTH: 590px">
   <p>
-    <input name="CheckButtonVinBlanc" type="checkbox" Readonly  tabindex=1
-	>
-	VinBlanc
-  </p>
-  <!--
-     DataField       =   ""
-     DataMember      =   ""
-     DataSource      =   ""
-  -->
-</SPAN>
-   
-<SPAN STYLE="HEIGHT: 24px; LEFT: 210px; POSITION: absolute; TOP: 80px; WIDTH: 100px">
-  <p>
-    <input name="CheckButtonVinRouge" type="checkbox" Readonly  tabindex=2
-	>
-	VinRouge
-  </p>
-  <!--
-     DataField       =   ""
-     DataMember      =   ""
-     DataSource      =   ""
-  -->
-</SPAN>
-   
-<SPAN STYLE="HEIGHT: 400px; LEFT: 40px; POSITION: absolute; TOP: 110px; WIDTH: 600px">
-  <p>
-  <TABLE border=1 height=15 width=600 cellspacing="0" cellpadding="0">
+  <TABLE border=1 height=15 width=590 cellspacing="0" cellpadding="0">
 	<TR  align=middle>
-      <TD width="100">
-        <FONT size=1>Numï¿½ro du vin </FONT>
+      <TD width="187">
+        <FONT size=1>Nom Vin </FONT>
       </TD>
-      <TD width="100">
-        <FONT size=1>Nom vin </FONT>
+      <TD width="202">
+        <FONT size=1>Quantitï¿½ </FONT>
       </TD>
-      <TD width="100">
-        <FONT size=1>Couleur du vin </FONT>
+      <TD width="181">
+        <FONT size=1>Volume </FONT>
       </TD>
-      <TD width="100">
-        <FONT size=1>Cuvï¿½e </FONT>
-      </TD>
-      <TD width="100">
-        <FONT size=1>Catï¿½gorie </FONT>
-      </TD>
-      <TD width="100">
-        <FONT size=1>Numï¿½ro du domaine </FONT>
-      </TD>
-      <TD width="100">
-        <FONT size=1>Numï¿½ro d'appellation </FONT>
+      <TD width="216">
+        <FONT size=1>Annï¿½e </FONT>
       </TD>
 	</TR>
     <TR>
   </TABLE>
-  <TABLE border=1 height=45 width=600 cellspacing="0" cellpadding="0">
+  <TABLE border=1 height=45 width=590 cellspacing="0" cellpadding="0">
 	<TD align="center" width="100%" bgColor=white>[Grid non exporté]</TD>
 	</TR>
   </TABLE>
   <!--
      DataField       =   ""
-     DataMember      =   "VIN"
+     DataMember      =   "BOUTEILLE"
      DataSource      =   ""
   -->
   </p>
 </SPAN>
 <SPAN STYLE="HEIGHT: 50px; LEFT: 660px; POSITION: absolute; TOP: 130px; WIDTH: 90px">
   <p>
-    <input name="Bouton2" type="button" value="Détail" Readonly  tabindex=5
+    <input name="Bouton2" type="button" value="Détail" Readonly  tabindex=3
      style="HEIGHT: 50px; WIDTH: 90px" 
 		onClick="Bouton2_Click()"
     >
@@ -136,7 +101,7 @@ function Bouton1_Click()
 </SPAN>
 <SPAN STYLE="HEIGHT: 50px; LEFT: 660px; POSITION: absolute; TOP: 380px; WIDTH: 90px">
   <p>
-    <input name="Bouton3" type="button" value="RetirerStock" Readonly  tabindex=6
+    <input name="Bouton3" type="button" value="RetirerStock" Readonly  tabindex=4
      style="HEIGHT: 50px; WIDTH: 90px" 
     >
   </p>
@@ -148,7 +113,7 @@ function Bouton1_Click()
 </SPAN>
 <SPAN STYLE="HEIGHT: 50px; LEFT: 660px; POSITION: absolute; TOP: 460px; WIDTH: 90px">
   <p>
-    <input name="Bouton4" type="button" value="AjouterBouteille" Readonly  tabindex=7
+    <input name="Bouton4" type="button" value="AjouterBouteille" Readonly  tabindex=5
      style="HEIGHT: 50px; WIDTH: 90px" 
     >
   </p>
@@ -160,10 +125,26 @@ function Bouton1_Click()
 </SPAN>
 <SPAN STYLE="HEIGHT: 50px; LEFT: 660px; POSITION: absolute; TOP: 220px; WIDTH: 90px">
   <p>
-    <input name="Bouton1" type="button" value="VinConnus" Readonly  tabindex=8
+    <input name="Bouton1" type="button" value="VinConnus" Readonly  tabindex=6
      style="HEIGHT: 50px; WIDTH: 90px" 
 		onClick="Bouton1_Click()"
     >
+  </p>
+  <!--
+     DataField       =   ""
+     DataMember      =   ""
+     DataSource      =   ""
+  -->
+</SPAN>
+ 
+<SPAN STYLE="HEIGHT: 24px; LEFT: 130px; POSITION: absolute; TOP: 80px; WIDTH: 120px">
+  <p align=LEFT>
+	<select size="1" name="ComboBox1" Readonly  tabindex=7 
+	 style="HEIGHT: 24px; WIDTH: 120px" 
+	 >
+		<OPTION valeur=0>VinRouge
+		<OPTION valeur=1>VinBlanc
+	</select>
   </p>
   <!--
      DataField       =   ""

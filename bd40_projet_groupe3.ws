@@ -6,3 +6,5 @@
 @i 1 @t 109 @f "MAQ1.MAQ" @n "MAQ1"
 @i 1 @t 109 @f "MAQ2.MAQ" @n "MAQ2"
 @i 1 @t 109 @f "MAQ3.MAQ" @n "MAQ3"
+@i 1 @t 109 @f "MAQ4.MAQ" @n "MAQ4"
+@i 1 @t 109 @f "MAQ5.MAQ" @n "MAQ5"
