@@ -3,6 +3,11 @@
 	<TITLE>Fiche_de_degustation</TITLE>
 </HEAD>
 <SCRIPT>
+function Bouton3_Click()
+{
+  parent.location = "MAQ1.htm";
+}
+
 </SCRIPT>
 
 <BODY bgcolor=Silver>
@@ -10,38 +15,128 @@
 <FORM>
 <!--FORM method="POST" action=""-->
     
-<SPAN STYLE="HEIGHT: 490px; LEFT: 40px; POSITION: absolute; TOP: 60px; WIDTH: 680px">
+<SPAN STYLE="HEIGHT: 20px; LEFT: 220px; POSITION: absolute; TOP: 145px; WIDTH: 41px">
+  <p align=RIGHT>
+  <FONT face="Ms Sans Serif" color=black style="font-size: 1pt; BACKGROUND-COLOR: ">
+  
+	Nom vin
+  <!--
+  -->
+  </p>
+</SPAN>
+
+<SPAN STYLE="HEIGHT: 20px; LEFT: 230px; POSITION: absolute; TOP: 185px; WIDTH: 31px">
+  <p align=RIGHT>
+  <FONT face="Ms Sans Serif" color=black style="font-size: 1pt; BACKGROUND-COLOR: ">
+  
+	Année
+  <!--
+  -->
+  </p>
+</SPAN>
+
+<SPAN STYLE="HEIGHT: 20px; LEFT: 130px; POSITION: absolute; TOP: 225px; WIDTH: 131px">
+  <p align=RIGHT>
+  <FONT face="Ms Sans Serif" color=black style="font-size: 1pt; BACKGROUND-COLOR: ">
+  
+	Température de dégustation
+  <!--
+  -->
+  </p>
+</SPAN>
+
+<SPAN STYLE="HEIGHT: 20px; LEFT: 170px; POSITION: absolute; TOP: 265px; WIDTH: 92px">
+  <p align=RIGHT>
+  <FONT face="Ms Sans Serif" color=black style="font-size: 1pt; BACKGROUND-COLOR: ">
+  
+	Note d'appréciation
+  <!--
+  -->
+  </p>
+</SPAN>
+
+<SPAN STYLE="HEIGHT: 20px; LEFT: 180px; POSITION: absolute; TOP: 305px; WIDTH: 85px">
+  <p align=RIGHT>
+  <FONT face="Ms Sans Serif" color=black style="font-size: 1pt; BACKGROUND-COLOR: ">
+  
+	Catégorie de plats
+  <!--
+  -->
+  </p>
+</SPAN>
+
+<SPAN STYLE="HEIGHT: 40px; LEFT: 670px; POSITION: absolute; TOP: 520px; WIDTH: 90px">
   <p>
-  <TABLE border=1 height=15 width=680 cellspacing="0" cellpadding="0">
-	<TR  align=middle>
-      <TD width="0">
-        <FONT size=1>Numéro dégustation </FONT>
-      </TD>
-      <TD width="0">
-        <FONT size=1>Numéro du vin </FONT>
-      </TD>
-      <TD width="0">
-        <FONT size=1>Année </FONT>
-      </TD>
-      <TD width="0">
-        <FONT size=1>Température de dégustation </FONT>
-      </TD>
-      <TD width="0">
-        <FONT size=1>Note d'appréciation </FONT>
-      </TD>
-	</TR>
-    <TR>
-  </TABLE>
-  <TABLE border=1 height=45 width=680 cellspacing="0" cellpadding="0">
-	<TD align="center" width="100%" bgColor=white>[Grid non exporté]</TD>
-	</TR>
-  </TABLE>
+    <input name="Bouton3" type="button" value="Retour" Readonly  tabindex=2
+     style="HEIGHT: 40px; WIDTH: 90px" 
+		onClick="Bouton3_Click()"
+    >
+  </p>
   <!--
      DataField       =   ""
+     DataMember      =   "Aucun"
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 23px; LEFT: 280px; POSITION: absolute; TOP: 140px; WIDTH: 94px">
+  <p>
+    <input name="EditBox18"   tabindex=10
+	 style="HEIGHT: 23px; WIDTH: 94px"
+	 >
+  </p>
+  <!--
+     DataField       =   "NOM_VIN"
+     DataMember      =   "VIN"
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 23px; LEFT: 280px; POSITION: absolute; TOP: 180px; WIDTH: 194px">
+  <p>
+    <input name="EditBox19"   tabindex=11
+	 style="HEIGHT: 23px; WIDTH: 194px"
+	 >
+  </p>
+  <!--
+     DataField       =   "ANNEE_MILLESIME"
      DataMember      =   "FICHE_DEGUST"
      DataSource      =   ""
   -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 23px; LEFT: 280px; POSITION: absolute; TOP: 220px; WIDTH: 194px">
+  <p>
+    <input name="EditBox20"   tabindex=12
+	 style="HEIGHT: 23px; WIDTH: 194px"
+	 >
   </p>
+  <!--
+     DataField       =   "TEMP_DEGUST"
+     DataMember      =   "FICHE_DEGUST"
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 23px; LEFT: 280px; POSITION: absolute; TOP: 260px; WIDTH: 193px">
+  <p>
+    <input name="EditBox24"   tabindex=13
+	 style="HEIGHT: 23px; WIDTH: 193px"
+	 >
+  </p>
+  <!--
+     DataField       =   "NOTE_DEGUST"
+     DataMember      =   "FICHE_DEGUST"
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 23px; LEFT: 280px; POSITION: absolute; TOP: 300px; WIDTH: 190px">
+  <p>
+    <input name="EditBox25"   tabindex=14
+	 style="HEIGHT: 23px; WIDTH: 190px"
+	 >
+  </p>
+  <!--
+     DataField       =   "CATEGORIE_PLAT"
+     DataMember      =   "PLATS"
+     DataSource      =   ""
+  -->
 </SPAN>
 
   <!--input type="submit" value="Envoyer" name="ButtonSubmit"-->
