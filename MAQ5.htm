@@ -3,6 +3,21 @@
 	<TITLE>MAQ5</TITLE>
 </HEAD>
 <SCRIPT>
+function Bouton1_Click()
+{
+  parent.location = "MAQ1.htm";
+}
+
+function Bouton2_Click()
+{
+  parent.location = "MAQ1.htm";
+}
+
+function Bouton3_Click()
+{
+  parent.location = "Ligne_de_commande.htm";
+}
+
 </SCRIPT>
 
 <BODY bgcolor=>
@@ -10,25 +25,97 @@
 <FORM>
 <!--FORM method="POST" action=""-->
     
-<SPAN STYLE="HEIGHT: 20px; LEFT: 363px; POSITION: absolute; TOP: 245px; WIDTH: 37px">
+<SPAN STYLE="HEIGHT: 20px; LEFT: 30px; POSITION: absolute; TOP: 55px; WIDTH: 80px">
   <p align=RIGHT>
   <FONT face="Ms Sans Serif" color=black style="font-size: 1pt; BACKGROUND-COLOR: ">
   
-	Volume
+	Date commande
   <!--
   -->
   </p>
 </SPAN>
 
-<SPAN STYLE="HEIGHT: 24px; LEFT: 405px; POSITION: absolute; TOP: 240px; WIDTH: 0px">
+<SPAN STYLE="HEIGHT: 60px; LEFT: 500px; POSITION: absolute; TOP: 450px; WIDTH: 240px">
   <p>
-    <input name="EditBox1"   tabindex=0
-	 style="HEIGHT: 24px; WIDTH: 0px"
+    <input name="Bouton1" type="button" value="Commander et ajouter les bouteilles au stock" Readonly  tabindex=0
+     style="HEIGHT: 60px; WIDTH: 240px" 
+		onClick="Bouton1_Click()"
+    >
+  </p>
+  <!--
+     DataField       =   ""
+     DataMember      =   ""
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 60px; LEFT: 40px; POSITION: absolute; TOP: 450px; WIDTH: 170px">
+  <p>
+    <input name="Bouton2" type="button" value="Annuler la commande" Readonly  tabindex=1
+     style="HEIGHT: 60px; WIDTH: 170px" 
+		onClick="Bouton2_Click()"
+    >
+  </p>
+  <!--
+     DataField       =   ""
+     DataMember      =   ""
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 23px; LEFT: 130px; POSITION: absolute; TOP: 50px; WIDTH: 170px">
+  <p>
+    <input name="EditBox1"   tabindex=2
+	 style="HEIGHT: 23px; WIDTH: 170px"
 	 >
   </p>
   <!--
-     DataField       =   "VOLUME_FORMAT"
-     DataMember      =   "BOUTEILLE"
+     DataField       =   "DATE_COMMANDE"
+     DataMember      =   "COMMANDE"
+     DataSource      =   ""
+  -->
+</SPAN>
+<SPAN STYLE="HEIGHT: 280px; LEFT: 40px; POSITION: absolute; TOP: 90px; WIDTH: 690px">
+  <p>
+  <TABLE border=1 height=15 width=690 cellspacing="0" cellpadding="0">
+	<TR  align=middle>
+      <TD width="100">
+        <FONT size=1>Nom du vin </FONT>
+      </TD>
+      <TD width="100">
+        <FONT size=1>Millésime </FONT>
+      </TD>
+      <TD width="100">
+        <FONT size=1>Volume </FONT>
+      </TD>
+      <TD width="100">
+        <FONT size=1>Quantité commandée </FONT>
+      </TD>
+      <TD width="100">
+        <FONT size=1>Prix d'achat </FONT>
+      </TD>
+	</TR>
+    <TR>
+  </TABLE>
+  <TABLE border=1 height=45 width=690 cellspacing="0" cellpadding="0">
+	<TD align="center" width="100%" bgColor=white>[Grid non exporté]</TD>
+	</TR>
+  </TABLE>
+  <!--
+     DataField       =   ""
+     DataMember      =   "LIGNE_DE_COMMANDE"
+     DataSource      =   ""
+  -->
+  </p>
+</SPAN>
+<SPAN STYLE="HEIGHT: 30px; LEFT: 520px; POSITION: absolute; TOP: 380px; WIDTH: 210px">
+  <p>
+    <input name="Bouton3" type="button" value="Ajouter un élément à la commande" Readonly  tabindex=4
+     style="HEIGHT: 30px; WIDTH: 210px" 
+		onClick="Bouton3_Click()"
+    >
+  </p>
+  <!--
+     DataField       =   ""
+     DataMember      =   ""
      DataSource      =   ""
   -->
 </SPAN>
