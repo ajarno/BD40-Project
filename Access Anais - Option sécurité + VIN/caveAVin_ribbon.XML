@@ -1,0 +1,37 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui"> 
+   <ribbon startFromScratch="true">
+      <tabs>
+        <tab id="tabGestion" label="Gestion de votre cave" visible="true">
+            <group id="groupCave" label="Ma cave">
+                <gallery id="galCave" label="Mes outils" columns="1" rows="3" imageMso="BookmarkInsert" size="large">
+                    <button id="itBouteille" label="Mes bouteilles en stock" screentip="Voir et ajouter des bouteilles dans la cave" onAction="btnBouteilles_action"/>
+                    <button id="itVin" label="Tous mes vins" screentip="Pour consulter et ajouter des vins" onAction="btnVins_action"/>
+                    <button id="itCommande" label="Commander" screentip="Commander des bouteilles ou consulter les commandes" onAction="btnVins_action"/>
+                </gallery>
+            </group>
+            <group id="groupFile" label="Fichier">
+                <button idMso="FileSave" label="Enregistrer" size="large"/>
+                <control idMso="Undo" imageMso="Undo" size="large" label="Undo"/>
+                <control idMso="Redo" imageMso="Redo" size="large" label="Redo"/>
+            </group>
+            <group idMso="GroupClipboard" label="Presse-papier"></group>
+            <group id="groupEnregistrements" label="Enregistrements">
+                <button idMso="GoToNewRecord" label="Nouveau" size="large"/>
+                <button idMso="RecordsDeleteRecord" label="Supprimer" size="normal"/>
+                <button idMso="DataRefreshAll" label="Reactualiser" size="normal"/>
+            </group>
+            <group id="GroupSortAndFilter" label="Filtrer et trier">
+                <toggleButton idMso="FiltersMenu" label="Filtrer" size="large"/>
+                <toggleButton idMso="SortUp" label="Croissant" size="normal"/>
+                <toggleButton idMso="SortDown" label="Decroissant" size="normal"/>
+                <button idMso="SortRemoveAllSorts" label="Effacer tous les tris" size="normal"/>
+            </group>
+            <group idMso="GroupFindAccess"></group>
+            <group id="groupExport" label="Exporter">
+                <control idMso="ExportExcel" size="large"/>
+            </group>
+            <group idMso="GroupPrintPreviewPrintAccess" label="Imprimer"></group>
+        </tab>
+      </tabs>
+   </ribbon>
+</customUI>
