@@ -3,10 +3,8 @@
       <tabs>
         <tab id="tabGestion" label="Gestion de votre cave" visible="true">
             <group id="groupCave" label="Ma cave">
-                <gallery id="galCave" label="Mes outils" columns="1" rows="3" imageMso="BookmarkInsert" size="large">
-                    <button id="itBouteille" label="Mes bouteilles en stock" screentip="Voir et ajouter des bouteilles dans la cave" onAction="btnBouteilles_action"/>
-                    <button id="itVin" label="Tous mes vins" screentip="Pour consulter et ajouter des vins" onAction="btnVins_action"/>
-                </gallery>
+                <button id="itBouteille" label="Mes bouteilles en stock" imageMso="SendCopyFlag" size="large" screentip="Voir et ajouter des bouteilles dans la cave" onAction="btnBouteilles_action"/>
+                <button id="itVin" label="Tous mes vins" imageMso="Pushpin" size="large" screentip="Pour consulter et ajouter des vins" onAction="btnVins_action"/>
             </group>
             <group id="groupFile" label="Fichier">
                 <button idMso="FileSave" label="Enregistrer" size="large"/>
