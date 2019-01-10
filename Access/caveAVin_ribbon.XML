@@ -6,7 +6,6 @@
                 <gallery id="galCave" label="Mes outils" columns="1" rows="3" imageMso="BookmarkInsert" size="large">
                     <button id="itBouteille" label="Mes bouteilles en stock" screentip="Voir et ajouter des bouteilles dans la cave" onAction="btnBouteilles_action"/>
                     <button id="itVin" label="Tous mes vins" screentip="Pour consulter et ajouter des vins" onAction="btnVins_action"/>
-                    <button id="itCommande" label="Commander" screentip="Commander des bouteilles ou consulter les commandes" onAction="btnVins_action"/>
                 </gallery>
             </group>
             <group id="groupFile" label="Fichier">
